@@ -1,0 +1,29 @@
+.problemdiv > .problem{
+    padding: 10px;
+    border-bottom:1px solid #ddd;
+}
+.problemdiv{
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.18);
+}
+.solveproblembtndiv{
+    text-align: right;
+}
+.solveproblembtn{
+    border-radius: 3px;
+    background: #d7263d;
+    color: #fff;
+    text-transform: capitalize;
+    border: 0;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 7px 10px;
+    font-weight: bold;
+    transition: all .1s cubic-bezier(0.19, 1, 0.22, 1) 0.1s;
+    -webkit-transition: all .1s cubic-bezier(0.19, 1, 0.22, 1) 0.1s;
+    -moz-transition: all .1s cubic-bezier(0.19, 1, 0.22, 1) 0.1s;
+    -o-transition: all .1s cubic-bezier(0.19, 1, 0.22, 1) 0.1s;
+    -ms-transition: all .1s cubic-bezier(0.19, 1, 0.22, 1) 0.1s;
+    outline: none;
+}
