@@ -1,0 +1,222 @@
+html,
+body {
+  font-family: "Lato", sans-serif;
+  background: #faf5ff;
+}
+.whitebg {
+  background: #fff;
+}
+#sidebar {
+  width: 250px;
+  position: fixed;
+  top: 0;
+  background: #fff;
+  left: 0;
+  padding: 20px;
+  height: 100vh;
+  z-index: 999;
+  transition: all 0.3s;
+  box-shadow: 0 0.25rem 0.125rem 0 rgba(0, 0, 0, 0.05);
+}
+
+#sidebar.active {
+  margin-left: -250px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.brown {
+  color: brown;
+}
+
+.blue {
+  color: blue;
+}
+
+.irisblue {
+  color: #00bcd4;
+}
+
+#sidebar ul.components {
+  padding: 20px 0;
+}
+
+#sidebar ul p {
+  padding: 10px;
+  color: #9a42f5;
+  font-weight: 600;
+}
+
+#sidebar ul li a {
+  padding: 10px;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-right: 16px;
+  font-size: 11px;
+  text-overflow: ellipsis;
+  margin-bottom: 2px;
+  text-transform: uppercase;
+}
+
+#sidebar ul li a:hover {
+  background: #e2f2ff;
+}
+
+#sidebar ul li.active > a,
+a[aria-expanded="true"] {
+  background: #e2f2ff;
+}
+
+a[data-toggle="collapse"] {
+  position: relative;
+}
+
+a[aria-expanded="false"]::before,
+a[aria-expanded="true"]::before {
+  content: "\e259";
+  display: block;
+  position: absolute;
+  right: 5px;
+  font-family: "Glyphicons Halflings";
+  font-size: 14px;
+}
+
+a[aria-expanded="true"]::before {
+  content: "\e260";
+}
+
+.components li a {
+  list-style-type: none;
+  text-decoration: none;
+}
+.components > li > a {
+  color: #2196f3 !important;
+  font-style: normal;
+  font-weight: 600;
+}
+#content {
+  width: calc(100% - 250px);
+  min-height: 100vh;
+  transition: all 0.3s;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-attachment: fixed;
+}
+
+#content.active {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  #sidebar {
+    margin-left: -250px;
+  }
+  #sidebar.active {
+    margin-left: 0;
+  }
+  #content {
+    width: 100%;
+  }
+  #content.active {
+    width: calc(100% - 250px);
+  }
+  #sidebarCollapse span {
+    display: none;
+  }
+}
+
+#sidebarCollapse {
+  border: 0;
+  background: transparent;
+  padding: 15px;
+  outline: none;
+}
+
+#content .nav > li > a {
+  color: #666;
+  letter-spacing: 1px;
+}
+.codetrackerlogo {
+  width: 40px;
+}
+.navbar {
+  border-radius: 0;
+}
+.pad0 {
+  padding: 0;
+}
+.pad10 {
+  padding: 10px;
+}
+.mar0 {
+  margin: 0;
+}
+.mar10{
+  margin: 10px;
+}
+.submitbtn,
+.submitbtn:active,
+.submitbtn:focus {
+  border: 1px solid #a459f4;
+  background: #a559f4;
+  padding: 6px 25px;
+  border-radius: 2px;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.inputstyle,
+.inputstyle:focus,
+.inputstyle:active {
+  border: 1px solid #ddd;
+  box-shadow: none;
+  background: #fff !important;
+  border-radius: 2px;
+}
+.headtxt{
+  font-size: 16px;
+  font-weight: 600;
+  color: #f52352;
+  padding:10px;
+}
+.tablestatusselect{
+  padding: 5px 20px;
+}
+.activestatus{
+  color: #009688;
+  font-weight: 600;
+  cursor: pointer;
+}
+.inactivestatus{
+  color: #F44336;
+  font-weight: 600;
+  cursor: pointer;
+}
+.instuctiontxt{
+  color: #0b8ad4;
+}
+.excelimage{
+  width:50px;
+  cursor: pointer;
+}
+textarea{
+  resize: none;
+}
+.successtr{
+  background: #4caf5066;
+}
+.warningtr{
+  background: #ff98004a
+}
+.dangertr{
+  background: #f443363b
+}
+#sidebar ul li a i{
+  margin-right: 5px;
+  font-size: 16px;
+  width: 20px;
+}
