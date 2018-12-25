@@ -1,0 +1,10 @@
+.settypediv > label{
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+.settypediv{
+    display: flex;
+    flex-wrap: wrap;
+}
